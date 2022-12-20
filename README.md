@@ -1,44 +1,11 @@
-# LWC Boilerplate Example
+# Base Template for LWC OSS running on LWR
 
-The **LWC Boilerplate** example contains the minimum code needed to get a simple Single Page Application (SPA) on LWR running.
-
-## Project Setup
-
-The directory structure looks like this:
-
-```
-scripts/
-  └── start-server.mjs  // create and start server
-src/
-  ├── assets/           // static assets
-  │   └── recipes-logo.png
-  └── modules/          // lwc modules
-      └── example/
-          └── app/
-              ├── app.css
-              ├── app.html
-              └── app.js
-lwr.config.json         // lwr configuration
-package.json            // npm packaging configuration
-```
+This template contains the minimum code needed to get a simple Single Page Application (SPA) on LWR running. It is already configured to use SLDS and the Base Lightning Web Components
 
 ## Configuration
 
 The LWR server is configured in `lwr.config.json`, at the root of the project. The **LWC Boilerplate** example has one LWC module and one server-side route.
 
-```json
-// lwr.config.json
-{
-    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
-    "routes": [
-        {
-            "id": "example",
-            "path": "/",
-            "rootComponent": "example/app"
-        }
-    ]
-}
-```
 
 ## Running the Project
 
