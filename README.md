@@ -1,6 +1,6 @@
 # Base Template for LWC OSS running on LWR
 
-This template contains the minimum code needed to get a simple Single Page Application (SPA) on LWR running. It is already configured to use SLDS and the Base Lightning Web Components
+This template contains the minimum code needed to get a simple Single Page Application (SPA) using LWR running on Windows. It is already configured to use SLDS and the Base Lightning Web Components
 
 The **LWC Boilerplate** example contains the minimum code needed to get a simple Single Page Application (SPA) on LWR running.
 
@@ -30,26 +30,26 @@ The LWR server is configured in `lwr.config.json`, at the root of the project. T
 ```json
 // lwr.config.json
 {
-    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
-    "routes": [
-        {
-            "id": "example",
-            "path": "/",
-            "rootComponent": "example/app"
-        }
-    ],
-    "assets": [
-        {
-            "alias": "assetsDir",
-            "dir": "$rootDir/src/assets",
-            "urlPath": "/public/assets"
-        },
-        {
-            "alias": "favicon",
-            "file": "$rootDir/src/assets/favicon.ico",
-            "urlPath": "/favicon.ico"
-        }
-    ]
+	"lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+	"routes": [
+		{
+			"id": "example",
+			"path": "/",
+			"rootComponent": "example/app"
+		}
+	],
+	"assets": [
+		{
+			"alias": "assetsDir",
+			"dir": "$rootDir/src/assets",
+			"urlPath": "/public/assets"
+		},
+		{
+			"alias": "favicon",
+			"file": "$rootDir/src/assets/favicon.ico",
+			"urlPath": "/favicon.ico"
+		}
+	]
 }
 ```
 
